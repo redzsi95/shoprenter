@@ -1,0 +1,136 @@
+#go-to-top {
+    background: #F67DA1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+#go-to-top:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #212121;
+}
+
+/*Carousel*/
+#hero {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    h1 {
+        font-size: 130px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 24px;
+        color: #BA8B88;
+    }
+}
+
+.slide {
+    background: rgb(254, 223, 233);
+    padding: 0 100px;
+}
+
+#hero-text {
+    padding: 10vw 0;
+    width: 50%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    background: rgb(254, 223, 233);
+    background: linear-gradient(90deg, rgba(254, 223, 233, 1) 0%, rgba(254, 223, 233, 1) 90%, rgba(254, 223, 233, 0) 100%);
+    white-space: pre-wrap;
+}
+
+.slider-img {
+    float: left;
+    position: absolute;
+    right: -100px;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background: url('../img/hero-bg.png') top center no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel ul.slides {
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+
+}
+
+.carousel li.slide {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+#next-slide,
+#prev-slide {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#next-slide {
+    right: 15px;
+    background: url('../img/right-arrow.svg') center no-repeat;
+}
+
+#prev-slide {
+    left: 15px;
+    background: url('../img/left-arrow.svg') center no-repeat;
+
+}
+
+#navigation {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    bottom: 0;
+    z-index: 5;
+}
+
+#navigation div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: #212121;
+    opacity: 30%;
+}
+
+.nav-active {
+    opacity: 100% !important;
+}
