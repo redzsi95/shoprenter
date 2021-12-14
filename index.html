@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TESZTTÉMA</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Fejléc, menük-->
+        <header>
+            <!--Felső menüsor-->
+            <div class="hamburger">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+            </div>
+            <div id="top-navigation">
+                <div class="left-nav">
+                    <ul class="menu">
+                        <li><a href="tel:09876543210" class="phone-number"><b>09 87 654 3210</b></a></li>
+                        <li><a href="#">Kapcsolat</a></li>
+                        <li><a href="#">Rólunk</a></li>
+                        <li class="has-children">
+                            <a href="#">Fizetés, szállítás</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Almenü1</a></li>
+                                <li><a href="#">Almenü2</a></li>
+                                <li><a href="#">Almenü3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="logo"><a href="/"><img src="img/logo.svg" alt="Logó Teszt Téma"></a></div>
+
+                <div class="right-nav">
+                    <div class="search">
+                        <input type="text" placeholder="keresés...">
+                    </div>
+                    <ul class="icons">
+                        <li><a href="#"><img src="img/profil.svg" alt="Profil belépés"></a></li>
+                        <li><a href="#"><img src="img/favorite.svg" alt="Kedvencek"></a></li>
+                        <li><a href="#"><img src="img/basket.svg" alt="Kosárban"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Középső navigáció, kategóriák menüpontok-->
+            <div class="menu-hide">
+                <div id="mid-navigation">
+                    <ul class="categories">
+                        <li><a href="#">ARCÁPOLÁS</a></li>
+                        <li><a href="#">TESTÁPOLÁs </a></li>
+                        <li><a href="#">HAJÁPOLÁS </a></li>
+                        <li><a href="#">SMINK</a></li>
+                        <li><a href="#">BŐRtípusok </a></li>
+                        <li><a href="#">ÚJDONSÁGOK </a></li>
+                        <li><a href="#">FÉRFIAKNAK </a></li>
+                        <li><a href="#">BABA-MAMA</a></li>
+                        <li><a href="#">AJÁNDÉK ÖTLETEK </a></li>
+                        <li><a href="#">MÁRKÁK </a></li>
+                        <li><a href="#">AKCIÓ</a></li>
+                    </ul>
+                    <div class="left-nav-hide">
+                        <ul class="menu">
+                            <li><a href="tel:09876543210" class="phone-number"><b>09 87 654 3210</b></a></li>
+                            <li><a href="#">Kapcsolat</a></li>
+                            <li><a href="#">Rólunk</a></li>
+                            <li class="has-children">
+                                <a href="#">Fizetés, szállítás</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Almenü1</a></li>
+                                    <li><a href="#">Almenü2</a></li>
+                                    <li><a href="#">Almenü3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!--Előnyök-->
+        <section id="preference">
+            <div class="center-box">
+            <p id="pref-text">Kizárólag növényei eredetű alkotó elemek</p>
+        </div>
+        </section>
+
+        <!--Banner lapozó-->
+        <section id="hero">
+            <div class="carousel">
+                <ul class="slides">
+                    <li class="slide one">
+                        <div id="hero-text">
+                            <h1>Lorem</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt.</p>
+                            <a href="#" class="button">Részletek</a>
+                        </div>
+                        <div class="slider-img"></div>
+                    </li>
+                    <li class="slide two">
+                        <div id="hero-text">
+                            <h1>Lorem</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt.</p>
+                            <a href="#" class="button">Részletek</a>
+                        </div>
+                        <div class="slider-img"></div>
+                    </li>
+                    <li class="slide three">
+                        <div id="hero-text">
+                            <h1>Lorem</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt.</p>
+                            <a href="#" class="button">Részletek</a>
+                        </div>
+                        <div class="slider-img"></div>
+                    </li>
+                    <li class="slide four">
+                        <div id="hero-text">
+                            <h1>Lorem</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt.</p>
+                            <a href="#" class="button">Részletek</a>
+                        </div>
+                        <div class="slider-img"></div>
+                    </li>
+                    <li class="slide five">
+                        <div id="hero-text">
+                            <h1>Lorem</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt.</p>
+                            <a href="#" class="button">Részletek</a>
+                        </div>
+                        <div class="slider-img"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="container">
+            <!--Banner oszlopok-->
+            <section id="banners">
+                <div class="center-box">
+                    <div class="banner-columns">
+                        <div class="grid-item item1">
+                            <a href="#">HEADING</a>
+                        </div>
+
+                        <div class="grid-item item2">
+                            <a href="#">HEADING</a>
+                        </div>
+
+                        <div class="grid-item item3">
+                            <a href="#">HEADING</a>
+                        </div>
+
+                        <div class="grid-item item4">
+                            <a href="#">HEADING</a>
+                        </div>
+
+                        <div class="grid-item item5">
+                            <a href="#">HEADING</a>
+                        </div>
+
+                        <div class="grid-item item6">
+                            <a href="#">HEADING</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--Leárazott termékek-->
+            <section id="discount">
+                <div class="center-box">
+                    <h1>AKCIÓS TERMÉKEK</h1>
+                    <div class="products">
+                        <div class="one-fourth product1">
+                            <div class="discount-product-img first">
+
+                            </div>
+                            <div class="discount-product-text">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore dolore magna aliqua incididunt ut. </p>
+                                <ul class="stars">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+
+                                <ul class="price">
+                                    <li>10 900 Ft</li>
+                                    <li>12 300 Ft</li>
+                                </ul>
+                                <a href="#" class="button">Kosárba</a>
+                            </div>
+                        </div>
+
+                        <div class="one-fourth product2">
+                            <div class="discount-product-img second">
+
+                            </div>
+                            <div class="discount-product-text">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore dolore magna aliqua incididunt ut. </p>
+
+                                <ul class="stars">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+
+                                <ul class="price">
+                                    <li>10 900 Ft</li>
+                                    <li>12 300 Ft</li>
+                                </ul>
+                                <a href="#" class="button">Kosárba</a>
+                            </div>
+                        </div>
+                        <div class="one-fourth product3">
+                            <div class="discount-product-img third">
+                            </div>
+                            <div class="discount-product-text">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore dolore magna aliqua incididunt ut. </p>
+                                <ul class="stars">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul class="price">
+                                    <li>10 900 Ft</li>
+                                    <li>12 300 Ft</li>
+                                </ul>
+                                <a href="#" class="button">Kosárba</a>
+                            </div>
+                        </div>
+                        <div class="one-fourth product4">
+                            <div class="discount-product-img fourth">
+
+                            </div>
+                            <div class="discount-product-text">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore dolore magna aliqua incididunt ut. </p>
+                                <ul class="stars">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <ul class="price">
+                                    <li>10 900 Ft</li>
+                                    <li>12 300 Ft</li>
+                                </ul>
+
+                                <a href="#" class="button">Kosárba</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="secondary-btn">Összes akciós termék</a>
+                </div>
+            </section>
+
+            <!--Animált banner-->
+            <section id="animation">
+                <div class="center-box">
+                    <div class="animation-bg">
+                        <div class="color-cover">
+                            <h3>A természetes szépségért</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            <a href="#" class="button">Megnézem</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!--Lábléc, menüpontok, nyelvváltás-->
+        <footer>
+            <div id="bottom-navigation">
+                <ul class="menu-item">
+                    <li><a href="#">Kapcsolat</a></li>
+                    <li><a href="#">Akciós termékek</a></li>
+                    <li><a href="#">Adatvédelmi nyilatkozat</a></li>
+                    <li><a href="#">Vásárlási feltételek</a></li>
+                    <li><a href="#">Fizetés, szállítás</a></li>
+                    <li><a href="#">Adatvédelem</a></li>
+                    <li><a href="#">Segítség</a></li>
+                    <li><a href="#">Rólunk</a></li>
+                </ul>
+                <ul class="contact">
+                    <li>4028 Debrecen, Kassai út 129t</li>
+                    <li><a href="mailto:info@shoprenter.hu">info@shoprenter.hu</a></li>
+                    <li>+36-1/234-5012</li>
+                    <li>Nyitvatartás: h-p 9-17</li>
+                </ul>
+                <ul class="socialmedia">
+                    <li><a href="#"><img src="img/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/insta.svg" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/youtube.svg" alt="Youtube"></a></li>
+                    <li><a href="#"><img src="img/messenger.svg" alt="Messenger"></a></li>
+                    <li><a href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+                </ul>
+            </div>
+
+            <div id="copyright">
+                <p>© 2021 Teszts téma</p>
+            </div>
+
+            <div class="language">
+                <ul>
+                    <li><a href="#">HU</a></li>
+                    <li><a href="#">EN</a></li>
+                    <li><select name="valuta" id="valuta" form="valutaform">
+                            <option value="huf">HUF</option>
+                            <option value="euro">EUR</option>
+                            <option value="dollár">USD</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+                vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+                qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+            <!--Fizetési és szállítási parterek logói-->
+            <div class="transport_payment_logos">
+                <div class="logo-items">
+                    <div><img src="img/gls.png" alt=""></div>
+                    <div><img src="img/dpd.png" alt=""></div>
+                    <div><img src="img/paypal.png" alt=""></div>
+                    <div><img src="img/mastercard.png" alt=""></div>
+                    <div><img src="img/maestro.png" alt=""></div>
+                    <div><img src="img/honapwb.png" alt=""></div>
+                    <div><img src="img/arukereso.png" alt=""></div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                // főoldal tetejére vissza
+                $('body').append('<div id="go-to-top"></div>');
+                $('#go-to-top').click(function () {
+
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+                // görgetés-visszaugrás
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $("#main-menu").addClass("sticky");
+                    } else {
+                        $("#main-menu").removeClass("sticky");
+                    }
+                });
+
+                $('#hero').append(
+                    '<div id="next-slide"></div><div id="prev-slide"></div><div id="navigation"></div>');
+                $('.carousel li.slide').each(function () {
+                    $('#navigation').append('<div></div>');
+                });
+
+                $('.carousel li.slide:first-of-type').addClass('active');
+                $('#navigation div:first-of-type').addClass('nav-active');
+                var ulsize = $('.carousel li.slide').length - 1;
+
+                $('#next-slide').click(function () {
+                    var active = $('.active').index();
+                    active++;
+                    if (active > ulsize) {
+                        active = 0;
+                    }
+                    $('.carousel li.slide').removeClass('active');
+                    $('.carousel li.slide').eq(active).addClass('active');
+                    $('.carousel ul.slides').animate({
+                        left: '-' + (active * 100) + '%'
+                    }, 800);
+                    $('#navigation div').removeClass('nav-active');
+                    $('#navigation div').eq(active).addClass('nav-active');
+                });
+                $('#prev-slide').click(function () {
+                    var active = $('.active').index();
+                    active--;
+                    if (active < 0) {
+                        active = 0;
+                    }
+                    $('.carousel li.slide').removeClass('active');
+                    $('.carousel li.slide').eq(active).addClass('active');
+                    $('.carousel ul.slides').animate({
+                        left: '-' + (active * 100) + '%'
+                    }, 800);
+                    $('#navigation div').removeClass('nav-active');
+                    $('#navigation div').eq(active).addClass('nav-active');
+
+                });
+                $('#navigation div').click(function () {
+                    var golyo = $(this).index();
+                    $('.carousel li.slide').removeClass('active');
+                    $('.carousel li.slide').eq(golyo).addClass('active');
+                    $('.carousel ul.slides').animate({
+                        left: '-' + (golyo * 100) + '%'
+                    }, 800);
+
+                    $('#navigation div').removeClass('nav-active');
+                    $(this).addClass('nav-active');
+
+                });
+                // Hamburger menü
+
+                $('.hamburger').click(function () {
+                    $('.menu-hide').toggleClass('show');
+                    $('.menu-hidetwo').toggleClass('show');
+                    $('.hamburger').toggleClass('active');
+                });
+                $('a').click(function () {
+                    $('.menu-hide').removeClass('show');
+                    $('.menu-hidetwo').removeClass('show');
+                    $('.hamburger').removeClass('active');
+                });
+            });
+
+        </script>
+    </body>
+
+</html>
