@@ -1,0 +1,24 @@
+/*Előnyök*/
+#preference {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 21px;
+        padding-bottom: 21px;
+
+    #pref-text {
+        display: inline-block;
+        position: relative;
+        padding-left: 20px;
+    }
+
+    #pref-text::before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 26px;
+        background: url("../img/pref.svg") center no-repeat;
+        background-size: contain;
+        left: -19px;
+        top: -5px;
+    }
+}
