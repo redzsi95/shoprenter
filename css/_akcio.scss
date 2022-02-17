@@ -21,20 +21,13 @@
 }
 
 .product-button {
-    display: flex;
-
-    .btn-primary {
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-
-    .btn-secondary {
-        margin-top: 85px;
-    }
+    display: block;
+    text-align: center;
 }
 
 .products {
     margin-top: 78px;
+
     p {
         font-size: 14px;
         padding: 13px 30px;
@@ -50,11 +43,6 @@
         &:hover {
             color: $hover-color;
         }
-    }
-
-    h4 {
-        font-weight: 500;
-        padding-bottom: 0;
     }
 
     .item-content {
@@ -81,12 +69,13 @@
                 display: none;
             }
         }
-        .slick-active{
+
+        .slick-active {
             opacity: 1;
             background-color: $text-color;
         }
     }
-    
+
 }
 
 .discount-product-text {
