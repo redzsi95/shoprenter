@@ -10,6 +10,12 @@ header {
         color: #fff;
         text-decoration: none;
         font-size: 12px;
+
+        &:hover {
+            color: $hover-color;
+            transition: 0.3s;
+
+        }
     }
 
     margin: 0 auto;
@@ -43,6 +49,7 @@ header {
             text-decoration: none;
             display: block;
             text-align: left;
+            font-size: 12px;
 
             &:hover {
                 color: $hover-color;
@@ -91,6 +98,21 @@ header {
         &:hover .dropdown_menu li {
             display: block;
         }
+
+        .dropdown-arrow:after {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border: solid white;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 2px;
+            position: absolute;
+            top: 4px;
+            margin-left: 8px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
     }
 
     .dropdown_menu li:first-of-type {
@@ -119,10 +141,6 @@ header {
 
             &:hover {
                 background-color: $hover-color;
-            }
-
-            a:hover {
-                color: #fff;
             }
 
             &::after {
@@ -180,17 +198,22 @@ header {
     display: flex;
     flex-direction: row;
 
+
     .input-block {
         border-bottom: 1px solid $divider-color;
         margin-right: 25px;
         display: flex;
         flex-direction: row;
+        width: 240px;
+        justify-content: space-between;
 
         input {
             background: none;
             box-shadow: none;
             border: none;
             padding-bottom: 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
         }
 
         button {
@@ -201,6 +224,7 @@ header {
         .search-svg:hover {
             fill: $hover-color;
             cursor: pointer;
+            transition: 0.3s;
 
         }
     }
@@ -220,28 +244,16 @@ header {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 16px;
-    padding-top: 37px;
-
-    .left-nav-hide {
-        height: 1px;
-        visibility: hidden;
-
-        .categories li {
-            display: inline-block;
-            padding: 0px 15px 0 15px;
-
-            a {
-                font-size: 16px;
-            }
-        }
-    }
+    padding-top: 49px;
 
     .categories li {
         display: inline-block;
         padding: 0px 15px 0 15px;
+        text-transform: uppercase;
 
         a {
             font-size: 16px;
+            font-weight: 400;
         }
     }
 }
@@ -284,14 +296,16 @@ header {
         flex-direction: row;
         margin: 30px 0;
         margin-right: 0;
-            a:last-of-type {
-                padding-right: 25px!important;
-            }
+
+        a:last-of-type {
+            padding-right: 25px !important;
+        }
     }
 
     .fullscreen-menu-container {
         visibility: visible;
         width: 100%;
+        text-transform: uppercase;
     }
 
     /* Menu Button */

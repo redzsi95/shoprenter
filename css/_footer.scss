@@ -3,55 +3,19 @@ footer {
     background: $text-color;
     margin: 0 auto;
 
-
     .menu-item {
         padding-top: 30px;
-        text-align: center;
-        color: #fff;
-
-        li {
-            display: inline-block;
-        }
-    }
-
-    .contact {
-        padding-top: 41px;
-        text-align: center;
-
-        li {
-            display: inline-block;
-        }
-    }
-
-    .socialmedia {
-        padding-top: 50px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        li {
-            display: inline-block;
-
-            svg:hover {
-                fill: $hover-color;
-            }
-
-            path:hover {
-                fill: $hover-color;
-            }
-        }
     }
 
     .menu-item li a {
         color: #fff;
         text-decoration: none;
         font-size: 14px;
-        padding: 0 20px;
         position: relative;
 
         &:hover {
             color: #F67DA1;
+            transition: 0.3s;
         }
     }
 
@@ -59,7 +23,6 @@ footer {
         color: #A1A1A1;
         text-decoration: none;
         font-size: 14px;
-        padding: 0 20px;
         position: relative;
 
         a {
@@ -72,19 +35,9 @@ footer {
         }
     }
 
-    .menu-item li a::after,
-    .contact li::after,
-    .lang li::after {
-        @include divider;
-    }
-
-    .menu-item li:last-of-type a:after,
-    .contact li:last-of-type::after,
-    .lang li:last-of-type::after {
-        content: none;
-    }
-
     .socialmedia {
+        padding-top: 50px;
+
         li {
             padding: 0 20px;
         }
@@ -187,11 +140,111 @@ footer {
     }
 }
 
-@media (max-width:1100px) {
-    .menu-item li {
-        padding-bottom: 30px;
+@media (min-width:330px) {
+    footer {
+        .bottom-navigation{
+            padding: 1rem;
+        }
+        .socialmedia {
+            padding-top: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: $hover-color;
+                    transition: 0.3s;
+                }
+            }
+        }
+        .footer-text{
+            width: 100%;
+            text-align: left;
+        }
+
+        .menu-item {
+            padding-top: 30px;
+            color: #fff;
+
+            li {
+                display: block;
+                padding-bottom: 15px;
+
+                a:after {
+                    content: none;
+                }
+            }
+
+        }
+
+        .contact {
+            margin-top: 20px;
+
+            li {
+                font-size: 14px;
+                padding-bottom: 15px;
+            }
+        }
     }
-    footer .contact li{
-        padding-bottom: 30px;
+}
+
+@media (min-width:768px) {
+    footer {
+        .menu-item {
+            padding-top: 30px;
+            text-align: center;
+            color: #fff;
+
+            li {
+                display: inline-block;
+                padding-bottom: 10px;
+
+                a {
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        .menu-item li a::after,
+        .contact li::after,
+        .lang li::after {
+            @include divider;
+        }
+
+        .menu-item li:last-of-type a:after,
+        .contact li:last-of-type::after,
+        .lang li:last-of-type::after {
+            content: none;
+        }
+
+        .contact {
+            padding-top: 41px;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                padding: 0 20px;
+            }
+
+            .mail-hover a:hover {
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+@media (min-width:1800px) {
+    footer {
+        .menu-item {
+            li {
+                padding-bottom: 0;
+            }
+        }
+
+
     }
 }

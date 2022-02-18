@@ -1,24 +1,20 @@
 /*Előnyök*/
 #preference {
     text-align: center;
-    text-transform: uppercase;
-    padding-top: 21px;
-        padding-bottom: 21px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
 
-    #pref-text {
-        display: inline-block;
-        position: relative;
-        padding-left: 20px;
-    }
+.pref-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    #pref-text::before {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 26px;
-        background: url("../img/pref.svg") center no-repeat;
-        background-size: contain;
-        left: -19px;
-        top: -5px;
+    p {
+        padding-left: 19px;
+        color: $hover-color;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
     }
 }

@@ -36,7 +36,7 @@
 
 .btn {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     border-radius: 0;
     padding: 10px 47px;
@@ -52,7 +52,8 @@
     color: #fff;
     background-color: $text-color;
     border: none;
-    &:hover{
+
+    &:hover {
         color: $hover-color;
         background-color: $text-color;
     }
@@ -62,7 +63,8 @@
     color: $text-color;
     border: 1px solid $text-color;
 }
-.button-arrow-icon{
+
+.button-arrow-icon {
     position: relative;
     top: -1px;
 }

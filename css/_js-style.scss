@@ -22,17 +22,24 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 50px;
 
     .btn {
         margin-top: 32px;
     }
-}
 
-span {
-    font-family: 'Quicksand';
-    text-decoration: none;
+    span {
+        font-family: 'Quicksand';
+    }
+
+    .banner-items-title {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $text-color;
+    }
+
+    .banner-items-subtitle {
+        font-weight: 400;
+    }
 }
 
 
@@ -42,14 +49,14 @@ span {
 
 .prev-Arrow {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 20px;
     z-index: 10;
 }
 
 .next-Arrow {
     position: absolute;
-    top: 50%;
+    top: 48%;
     right: 20px;
     z-index: 10;
 }
@@ -67,8 +74,8 @@ span {
         justify-content: center;
 
         li {
-            margin-left: 15px;
-            margin-right: 15px;
+            margin-left: 7.5px;
+            margin-right: 7.5px;
             width: 10px;
             height: 10px;
             position: relative;
@@ -89,32 +96,50 @@ span {
     }
 }
 
-.responsive-img {
-    width: 100%;
-    max-width: 1920px;
-    height: auto;
+.first-slide,
+.second-slide,
+.third-slide,
+.fourth-slide,
+.fifth-slide {
+    background: url('../img/slide_banner.jpg') center no-repeat;
+    background-size: cover;
 }
 
 @media (min-width:330px) {
     .banner-items-title {
         font-size: 40px;
-        text-transform: uppercase;
+        line-height: 40px;
     }
 
     .banner-items-subtitle {
         font-size: 16px;
+        line-height: 20px;
+        padding-top: 20px;
+        padding-left: 2px;
+        width: 90%;
+        color: $text-color;
     }
 
     .banner-items-container {
         padding-left: 60px;
         padding-right: 0;
+        padding-top: 0px;
     }
 
     .banner-items-button {
+        padding-left: 0;
         margin-top: 20px;
-        .btn{
-            margin: 0;
+        .btn-primary {
+            margin-top: 0;
         }
+    }
+
+    .first-slide,
+    .second-slide,
+    .third-slide,
+    .fourth-slide,
+    .fifth-slide {
+        min-height: 300px;
     }
 }
 
@@ -122,32 +147,57 @@ span {
 @media (min-width:575px) {
     .banner-items-title {
         font-size: 100px;
+        line-height: 100px;
     }
 
     .banner-items-subtitle {
         font-size: 20px;
+
     }
 
     .banner-items-container {
         padding-left: 100px;
         padding-right: 0;
     }
+
+    .first-slide,
+    .second-slide,
+    .third-slide,
+    .fourth-slide,
+    .fifth-slide {
+        min-height: 500px;
+    }
 }
 
 @media only screen and (min-width:1780px) {
     .banner-items-container {
-        padding-left: 170px;
-        ;
+        padding-left: 176px;
+        padding-top: 110px;
     }
 
     .banner-items-title {
         font-size: 130px;
-        text-transform: uppercase;
+        line-height: 130px;
     }
 
     .banner-items-subtitle {
-        font-size: 24px;
-        color: #BA8B88;
         line-height: 34px;
+        padding-top: 17px;
+        padding-left: 10px;
+        color: #BA8B88;
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .first-slide,
+    .second-slide,
+    .third-slide,
+    .fourth-slide,
+    .fifth-slide {
+        min-height: 700px;
+    }
+    .banner-items-button {
+        margin-top: 37px;
+        padding-left: 10px;
     }
 }
