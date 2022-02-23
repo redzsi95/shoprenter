@@ -19,7 +19,7 @@
 .product-button {
     display: block;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .row {
@@ -63,6 +63,7 @@
         margin-left: 1rem;
         margin-right: 1rem;
         padding: 10px;
+        cursor: pointer;
 
         li {
             margin-left: 15px;
@@ -92,8 +93,32 @@
     margin-top: 30px;
 }
 
-.discount-product-img:hover {
-    opacity: 0.6;
+.discount-product-img {
+    position: relative;
+
+    .favorite-btn {
+        position: absolute;
+        background: none;
+        top: 0;
+        right: 0;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-style: solid;
+        border-width: 0 50px 50px 0;
+        border-color: transparent #F4F0F1 transparent transparent;
+        z-index: 9;
+
+        svg {
+            position: absolute;
+            z-index: 10;
+            right: -45px;
+            top: 10px;
+            &:hover{
+                color: $hover-color;
+            }
+        }
+    }
 }
 
 .stars {
@@ -132,8 +157,9 @@
         padding-right: 15px;
     }
 }
-@media (min-width:330px){
-    .slick-slide img{
+
+@media (min-width:330px) {
+    .slick-slide img {
         margin: 0 auto;
     }
 }

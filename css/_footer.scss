@@ -20,7 +20,7 @@ footer {
     }
 
     .contact li {
-        color: #A1A1A1;
+        color: #A6A6A6;
         text-decoration: none;
         font-size: 14px;
         position: relative;
@@ -237,12 +237,15 @@ footer {
     }
 }
 
-@media (min-width:1800px) {
+@media (min-width:1780px) {
     footer {
         .menu-item {
             li {
                 padding-bottom: 0;
             }
+        }
+        .footer-text{
+            text-align: center;
         }
 
 

@@ -14,7 +14,7 @@
     grid-row: span 1;
 
     &:hover {
-        opacity: 0.6;
+        background: rgba(0,0,0,0.5);
     }
 }
 
@@ -139,6 +139,7 @@
     .white,
     .black {
         font-size: 38px;
+        line-height: 56px;
     }
 }
 

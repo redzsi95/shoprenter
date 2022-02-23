@@ -120,6 +120,14 @@ body {
 
 .banner-items-container .banner-items-subtitle {
   font-weight: 400;
+  padding-left: 8px;
+  line-height: 34px;
+  padding-top: 17px;
+}
+
+.banner-items-container .hero-btn {
+  padding: 15px 49px 14px 50px;
+  margin-left: 0px;
 }
 
 .slick-slider {
@@ -229,6 +237,9 @@ body {
   }
   .banner-items-subtitle {
     font-size: 20px;
+    color: #BA8B88;
+    width: 100%;
+    line-height: 34px;
   }
   .banner-items-container {
     padding-left: 100px;
@@ -253,11 +264,6 @@ body {
     line-height: 130px;
   }
   .banner-items-subtitle {
-    line-height: 34px;
-    padding-top: 17px;
-    padding-left: 10px;
-    color: #BA8B88;
-    width: 100%;
     font-size: 24px;
   }
   .first-slide,
@@ -328,6 +334,7 @@ header a:hover {
   display: block;
   text-align: left;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .top-navigation .left-nav a:hover {
@@ -510,6 +517,7 @@ header a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-top: 10px;
 }
 
 .right-nav .input-block {
@@ -529,6 +537,7 @@ header a:hover {
 }
 
 .right-nav .input-block input {
+  padding-left: 2px;
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -541,6 +550,7 @@ header a:hover {
 .right-nav .input-block button {
   background: none;
   border: none;
+  padding-bottom: 9px;
 }
 
 .right-nav .input-block .search-svg:hover {
@@ -548,6 +558,16 @@ header a:hover {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.right-nav input[type=search] {
+  color: #fff;
+}
+
+.right-nav input:-webkit-autofill,
+.right-nav input:-webkit-autofill:focus {
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
 }
 
 .right-nav .icons a {
@@ -793,7 +813,7 @@ footer .menu-item li a:hover {
 }
 
 footer .contact li {
-  color: #A1A1A1;
+  color: #A6A6A6;
   text-decoration: none;
   font-size: 14px;
   position: relative;
@@ -1022,9 +1042,12 @@ footer .transport_payment_logos .logo-items div {
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1780px) {
   footer .menu-item li {
     padding-bottom: 0;
+  }
+  footer .footer-text {
+    text-align: center;
   }
 }
 
@@ -1074,7 +1097,7 @@ footer .transport_payment_logos .logo-items div {
 }
 
 .grid-item:hover {
-  opacity: 0.6;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .wide {
@@ -1203,6 +1226,7 @@ footer .transport_payment_logos .logo-items div {
   .white,
   .black {
     font-size: 38px;
+    line-height: 56px;
   }
 }
 
@@ -1229,7 +1253,7 @@ h1 {
 .product-button {
   display: block;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .row {
@@ -1278,6 +1302,7 @@ h1 {
   margin-left: 1rem;
   margin-right: 1rem;
   padding: 10px;
+  cursor: pointer;
 }
 
 .products .slick-dots li {
@@ -1305,8 +1330,33 @@ h1 {
   margin-top: 30px;
 }
 
-.discount-product-img:hover {
-  opacity: 0.6;
+.discount-product-img {
+  position: relative;
+}
+
+.discount-product-img .favorite-btn {
+  position: absolute;
+  background: none;
+  top: 0;
+  right: 0;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  border-color: transparent #F4F0F1 transparent transparent;
+  z-index: 9;
+}
+
+.discount-product-img .favorite-btn svg {
+  position: absolute;
+  z-index: 10;
+  right: -45px;
+  top: 10px;
+}
+
+.discount-product-img .favorite-btn svg:hover {
+  color: #F67DA1;
 }
 
 .stars {
@@ -1448,10 +1498,10 @@ h1 {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1780px) {
   h3 {
     font-size: 48px;
-    line-height: 53px;
+    line-height: 56px;
   }
 }
 
@@ -1483,7 +1533,7 @@ h1 {
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 0;
-  padding: 10px 47px;
+  padding: 15px 47px 14px 47px;
   margin: 0 auto;
 }
 
@@ -1506,6 +1556,12 @@ h1 {
 .btn-outline-primary {
   color: #212121;
   border: 1px solid #212121;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background: #F67DA1;
+  border: 1px solid transparent;
 }
 
 .button-arrow-icon {

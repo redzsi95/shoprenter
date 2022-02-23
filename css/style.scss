@@ -39,7 +39,7 @@
     font-weight: 400;
     text-transform: uppercase;
     border-radius: 0;
-    padding: 10px 47px;
+    padding: 15px 47px 14px 47px;
     margin: 0 auto;
 
     svg {
@@ -62,6 +62,11 @@
 .btn-outline-primary {
     color: $text-color;
     border: 1px solid $text-color;
+    font-weight: 600;
+    &:hover{
+        background: $hover-color;
+        border: 1px solid transparent;
+    }
 }
 
 .button-arrow-icon {

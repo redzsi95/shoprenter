@@ -39,6 +39,14 @@
 
     .banner-items-subtitle {
         font-weight: 400;
+        padding-left: 8px;
+        line-height: 34px;
+        padding-top: 17px;
+    }
+
+    .hero-btn {
+        padding: 15px 49px 14px 50px;
+        margin-left: 0px;
     }
 }
 
@@ -129,6 +137,7 @@
     .banner-items-button {
         padding-left: 0;
         margin-top: 20px;
+
         .btn-primary {
             margin-top: 0;
         }
@@ -152,6 +161,9 @@
 
     .banner-items-subtitle {
         font-size: 20px;
+        color: #BA8B88;
+        width: 100%;
+        line-height: 34px;
 
     }
 
@@ -181,11 +193,6 @@
     }
 
     .banner-items-subtitle {
-        line-height: 34px;
-        padding-top: 17px;
-        padding-left: 10px;
-        color: #BA8B88;
-        width: 100%;
         font-size: 24px;
     }
 
@@ -196,6 +203,7 @@
     .fifth-slide {
         min-height: 700px;
     }
+
     .banner-items-button {
         margin-top: 37px;
         padding-left: 10px;

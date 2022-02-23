@@ -50,6 +50,7 @@ header {
             display: block;
             text-align: left;
             font-size: 12px;
+            font-weight: 400;
 
             &:hover {
                 color: $hover-color;
@@ -197,6 +198,7 @@ header {
 .right-nav {
     display: flex;
     flex-direction: row;
+    padding-top: 10px;
 
 
     .input-block {
@@ -208,6 +210,7 @@ header {
         justify-content: space-between;
 
         input {
+            padding-left: 2px;
             background: none;
             box-shadow: none;
             border: none;
@@ -219,6 +222,7 @@ header {
         button {
             background: none;
             border: none;
+            padding-bottom: 9px;
         }
 
         .search-svg:hover {
@@ -227,6 +231,15 @@ header {
             transition: 0.3s;
 
         }
+    }
+
+    input[type=search] {
+        color: #fff;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s;
     }
 
     .icons {
