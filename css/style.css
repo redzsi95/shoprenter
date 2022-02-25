@@ -324,7 +324,7 @@ header a:hover {
 
 .top-navigation .left-nav li {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 13px;
   position: relative;
 }
 
@@ -335,6 +335,7 @@ header a:hover {
   text-align: left;
   font-size: 12px;
   font-weight: 400;
+  letter-spacing: 1%;
 }
 
 .top-navigation .left-nav li a:hover {
@@ -521,7 +522,7 @@ header a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 10px;
+  padding-top: 13px;
 }
 
 .right-nav .input-block {
@@ -546,7 +547,7 @@ header a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   font-size: 14px;
   letter-spacing: 1px;
 }
@@ -591,7 +592,7 @@ header a:hover {
 
 .mid-navigation .categories li {
   display: inline-block;
-  padding: 0px 15px 0 15px;
+  padding: 0px 13px 0 13px;
   text-transform: uppercase;
 }
 
@@ -1053,6 +1054,9 @@ footer .transport_payment_logos .logo-items div {
   footer .footer-text {
     text-align: center;
   }
+  footer .contact {
+    margin-top: 0px;
+  }
 }
 
 /*Előnyök*/
@@ -1257,7 +1261,11 @@ h1 {
 .product-button {
   display: block;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.all-products {
+  margin-top: 46px;
 }
 
 .row {
@@ -1296,38 +1304,7 @@ h1 {
 }
 
 .products .slick-dots {
-  margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.products .slick-dots li {
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 100px;
-  height: 7px;
-  position: relative;
-  padding: 0;
-  background-color: #212121;
-  border-radius: 0;
-  opacity: 0.2;
-}
-
-.products .slick-dots li button {
   display: none;
-}
-
-.products .slick-dots .slick-active {
-  opacity: 1;
-  background-color: #212121;
 }
 
 .discount-product-text {
@@ -1356,7 +1333,7 @@ h1 {
   position: absolute;
   z-index: 10;
   right: -45px;
-  top: 10px;
+  top: 8px;
 }
 
 .discount-product-img .favorite-btn svg:hover {
@@ -1364,7 +1341,7 @@ h1 {
 }
 
 .stars {
-  margin-top: 15px;
+  margin-top: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1378,17 +1355,17 @@ h1 {
 
 .stars li {
   display: inline;
-  padding: 0 5px;
+  padding: 0px 5px;
 }
 
 .stars li:last-of-type {
   color: #A1A1A1;
   font-size: 12px;
-  padding: 3px 5px;
+  padding-left: 8px;
 }
 
 .price {
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .price li {
@@ -1404,6 +1381,11 @@ h1 {
   font-weight: 400;
   text-decoration: line-through;
   padding-right: 15px;
+}
+
+.price li:last-of-type {
+  padding-left: 0;
+  padding-right: 3px;
 }
 
 @media (min-width: 330px) {
@@ -1480,6 +1462,10 @@ h1 {
   min-height: 500px;
 }
 
+.animation-bg .animation-text {
+  margin-top: 21px;
+}
+
 .animation-bg h3 {
   text-transform: uppercase;
   font-weight: 400;
@@ -1535,6 +1521,7 @@ h1 {
   .container-xl,
   .container-xxl {
     max-width: 1780px;
+    padding: 0px;
   }
 }
 
