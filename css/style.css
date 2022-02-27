@@ -301,6 +301,10 @@ header a:hover {
   transition: 0.3s;
 }
 
+#logo {
+  margin-left: 24px;
+}
+
 #logo .hover-white:hover {
   fill: #F67DA1;
 }
@@ -316,6 +320,10 @@ header a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.top-navigation .left-nav {
+  margin-top: 8px;
 }
 
 .top-navigation .left-nav .menu {
@@ -527,7 +535,8 @@ header a:hover {
 
 .right-nav .input-block {
   border-bottom: 1px solid #5C5C5C;
-  margin-right: 25px;
+  margin-right: 16px;
+  margin-top: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,14 +564,16 @@ header a:hover {
 .right-nav .input-block button {
   background: none;
   border: none;
-  padding-bottom: 9px;
+  color: #fff;
+  padding-bottom: 5px;
 }
 
-.right-nav .input-block .search-svg:hover {
-  fill: #F67DA1;
+.right-nav .input-block button .search-svg:hover {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding-bottom: 5px;
+  fill: #F67DA1;
 }
 
 .right-nav input[type=search] {
@@ -573,6 +584,15 @@ header a:hover {
 .right-nav input:-webkit-autofill:focus {
   -webkit-transition: background-color 600000s 0s, color 600000s 0s;
   transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.right-nav .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .right-nav .icons a {
@@ -645,6 +665,13 @@ header a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .right-nav .input-block button {
+    background: none;
+    border: none;
+  }
+  .right-nav .input-block button:hover {
+    color: #F67DA1;
+  }
   .icons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -681,7 +708,7 @@ header a:hover {
     transition: background-color 500ms ease-in-out;
   }
   .menu-button {
-    margin: 1.5rem;
+    margin: 0.5rem;
   }
   .menu-button:hover,
   .menu-button:focus,
@@ -801,7 +828,7 @@ footer {
 }
 
 footer .menu-item {
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 footer .menu-item li a {
@@ -809,6 +836,7 @@ footer .menu-item li a {
   text-decoration: none;
   font-size: 14px;
   position: relative;
+  font-weight: 400;
 }
 
 footer .menu-item li a:hover {
@@ -838,19 +866,24 @@ footer .socialmedia {
 }
 
 footer .socialmedia li {
-  padding: 0 20px;
+  padding: 0 14px;
 }
 
-footer #copyright {
+footer .socialmedia li:first-child {
+  padding-left: 0;
+}
+
+footer .socialmedia #copyright {
   text-align: center;
-  padding-top: 41px;
+  padding-top: 43px;
 }
 
-footer #copyright p {
+footer .socialmedia #copyright p {
   margin: 0 auto;
-  font-size: 12;
   font-weight: 500;
   color: #A6A6A6;
+  font-size: 12px;
+  line-height: 1;
 }
 
 footer .language {
@@ -867,14 +900,20 @@ footer .language {
           justify-content: center;
 }
 
-footer .language li {
+footer .language .lang li {
   display: inline-block;
   position: relative;
 }
 
-footer .language li a {
+footer .language .lang li::after {
+  right: -1px;
+  top: 1px;
+}
+
+footer .language .lang li a {
   text-decoration: none;
   color: #767676;
+  font-size: 12px;
   padding: 0 10px;
 }
 
@@ -883,8 +922,9 @@ footer .language li:first-of-type a {
 }
 
 footer .select-menu {
-  border: 1px solid #5C5C5C;
   position: relative;
+  padding: 0 12px;
+  border: 0;
 }
 
 footer .select-menu li:first-of-type::after {
@@ -898,7 +938,7 @@ footer .select-menu li:first-of-type::after {
   -webkit-transform: rotate(45deg);
   position: absolute;
   top: 11px;
-  right: 7px;
+  right: 25px;
 }
 
 footer .select-menu select {
@@ -906,10 +946,11 @@ footer .select-menu select {
   border: none;
   color: #fff;
   font-size: 12px;
-  padding: 8px 20px 8px 10px;
+  padding: 6px 25px 6px 10px;
+  border: 1px solid #5C5C5C;
 }
 
-footer .select-menu option {
+footer option {
   background: #212121;
 }
 
@@ -1006,7 +1047,6 @@ footer .transport_payment_logos .logo-items div {
 
 @media (min-width: 768px) {
   footer .menu-item {
-    padding-top: 30px;
     text-align: center;
     color: #fff;
   }
@@ -1015,7 +1055,8 @@ footer .transport_payment_logos .logo-items div {
     padding-bottom: 10px;
   }
   footer .menu-item li a {
-    padding: 0 20px;
+    padding: 0 18px;
+    line-height: 18px;
   }
   footer .menu-item li a::after,
   footer .contact li::after,
@@ -1048,11 +1089,18 @@ footer .transport_payment_logos .logo-items div {
 }
 
 @media (min-width: 1780px) {
+  footer .menu-item {
+    padding-top: 27px;
+  }
   footer .menu-item li {
     padding-bottom: 0;
+    padding-top: 0px;
   }
   footer .footer-text {
     text-align: center;
+    margin-top: 21px;
+    max-width: 1170px;
+    margin-bottom: 10px;
   }
   footer .contact {
     margin-top: 0px;
@@ -1304,7 +1352,7 @@ h1 {
 }
 
 .products .slick-dots {
-  display: none;
+  display: none !important;
 }
 
 .discount-product-text {
@@ -1391,6 +1439,20 @@ h1 {
 @media (min-width: 330px) {
   .slick-slide img {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .slick-slide img {
+    margin: 0 auto;
+  }
+  .discount-product-img,
+  .discount-product-text {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .discount-product-text {
+    margin-top: 30px;
   }
 }
 

@@ -22,6 +22,8 @@ header {
 }
 
 #logo {
+    margin-left: 24px;
+
     .hover-white:hover {
         fill: $hover-color;
     }
@@ -34,6 +36,8 @@ header {
     align-items: center;
 
     .left-nav {
+        margin-top: 8px;
+
         .menu {
             display: inline;
         }
@@ -210,11 +214,13 @@ header {
 
     .input-block {
         border-bottom: 1px solid $divider-color;
-        margin-right: 25px;
+        margin-right: 16px;
+        margin-top: 11px;
         display: flex;
         flex-direction: row;
         width: 240px;
         justify-content: space-between;
+
 
         input {
             padding-left: 2px;
@@ -229,14 +235,15 @@ header {
         button {
             background: none;
             border: none;
-            padding-bottom: 9px;
-        }
+            color: #fff;
+            padding-bottom: 5px;
 
-        .search-svg:hover {
-            fill: $hover-color;
-            cursor: pointer;
-            transition: 0.3s;
-
+            .search-svg:hover {
+                cursor: pointer;
+                transition: 0.3s;
+                padding-bottom: 5px;
+                fill: $hover-color;
+            }
         }
     }
 
@@ -250,6 +257,9 @@ header {
     }
 
     .icons {
+        display: flex;
+        align-items: center;
+
         a {
             padding: 0 25px;
         }
@@ -259,6 +269,8 @@ header {
         }
     }
 }
+
+
 
 .mid-navigation {
     margin: 0 auto;
@@ -309,6 +321,15 @@ header {
             margin-right: 0px;
             width: 100%;
             justify-content: space-between;
+
+            button {
+                background: none;
+                border: none;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
         }
     }
 
@@ -343,7 +364,7 @@ header {
     }
 
     .menu-button {
-        margin: 1.5rem;
+        margin: 0.5rem;
     }
 
     .menu-button:hover,

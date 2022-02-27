@@ -4,7 +4,7 @@ footer {
     margin: 0 auto;
 
     .menu-item {
-        padding-top: 30px;
+        padding-top: 27px;
     }
 
     .menu-item li a {
@@ -12,6 +12,7 @@ footer {
         text-decoration: none;
         font-size: 14px;
         position: relative;
+        font-weight: 400;
 
         &:hover {
             color: #F67DA1;
@@ -39,19 +40,24 @@ footer {
         padding-top: 50px;
 
         li {
-            padding: 0 20px;
+            padding: 0 14px;
         }
-    }
 
-    #copyright {
-        text-align: center;
-        padding-top: 41px;
+        li:first-child {
+            padding-left: 0;
+        }
 
-        p {
-            margin: 0 auto;
-            font-size: 12;
-            font-weight: 500;
-            color: #A6A6A6;
+        #copyright {
+            text-align: center;
+            padding-top: 43px;
+
+            p {
+                margin: 0 auto;
+                font-weight: 500;
+                color: #A6A6A6;
+                font-size: 12px;
+                line-height: 1;
+            }
         }
     }
 
@@ -62,14 +68,19 @@ footer {
         align-items: center;
         justify-content: center;
 
-        li {
+        .lang li {
             display: inline-block;
             position: relative;
+
+            &::after {
+                right: -1px;
+                top: 1px;
+            }
 
             a {
                 text-decoration: none;
                 color: #767676;
-                ;
+                font-size: 12px;
                 padding: 0 10px;
             }
         }
@@ -80,8 +91,9 @@ footer {
     }
 
     .select-menu {
-        border: 1px solid #5C5C5C;
         position: relative;
+        padding: 0 12px;
+        border: 0;
 
         li:first-of-type::after {
             content: '';
@@ -94,7 +106,7 @@ footer {
             -webkit-transform: rotate(45deg);
             position: absolute;
             top: 11px;
-            right: 7px;
+            right: 25px;
         }
 
         select {
@@ -102,13 +114,15 @@ footer {
             border: none;
             color: #fff;
             font-size: 12px;
-            padding: 8px 20px 8px 10px;
-        }
-
-        option {
-            background: $text-color;
+            padding: 6px 25px 6px 10px;
+            border: 1px solid #5C5C5C;
         }
     }
+
+    option {
+        background: $text-color;
+    }
+
 
     p {
         text-align: center;
@@ -142,9 +156,10 @@ footer {
 
 @media (min-width:330px) {
     footer {
-        .bottom-navigation{
+        .bottom-navigation {
             padding: 1rem;
         }
+
         .socialmedia {
             padding-top: 50px;
             text-align: center;
@@ -161,7 +176,8 @@ footer {
                 }
             }
         }
-        .footer-text{
+
+        .footer-text {
             width: 100%;
             text-align: left;
         }
@@ -195,7 +211,6 @@ footer {
 @media (min-width:768px) {
     footer {
         .menu-item {
-            padding-top: 30px;
             text-align: center;
             color: #fff;
 
@@ -204,7 +219,8 @@ footer {
                 padding-bottom: 10px;
 
                 a {
-                    padding: 0 20px;
+                    padding: 0 18px;
+                    line-height: 18px;
                 }
             }
         }
@@ -240,17 +256,22 @@ footer {
 @media (min-width:1780px) {
     footer {
         .menu-item {
+                padding-top: 27px;
             li {
                 padding-bottom: 0;
+                padding-top: 0px;
             }
         }
-        .footer-text{
+
+        .footer-text {
             text-align: center;
+            margin-top: 21px;
+            max-width: 1170px;
+            margin-bottom: 10px;
         }
-        .contact{
+
+        .contact {
             margin-top: 0px;
         }
-
-
     }
 }
